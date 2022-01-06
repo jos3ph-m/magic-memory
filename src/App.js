@@ -12,9 +12,9 @@ const cardImages = [
 function App() {
   // shuffle cards
   const shuffleCards = () => {
-    const shuffledCards = [...cardImages, ...cardImages].sort(
-      () => Math.random() - 0.5
-    );
+    const shuffledCards = [...cardImages, ...cardImages]
+      .sort(() => Math.random() - 0.5)
+      .map((card) => ({ ...card }));
   };
 
   return (
