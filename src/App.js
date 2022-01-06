@@ -12,7 +12,7 @@ const cardImages = [
 function App() {
   // shuffle cards
   const shuffleCards = () => {
-    const shuffledCards = [...cardImages, ...cardImages];
+    const shuffledCards = [...cardImages, ...cardImages].sort(() => {});
   };
 
   return (
