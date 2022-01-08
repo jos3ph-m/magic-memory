@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleCard.css';
 
-export const SingleCard = () => {
+export const SingleCard = ({ card }) => {
   return (
     <div className="card">
       <div>
