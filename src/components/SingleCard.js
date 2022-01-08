@@ -2,6 +2,8 @@ import React from 'react';
 import './SingleCard.css';
 
 export const SingleCard = ({ card }) => {
+  const handleClick = () => {};
+
   return (
     <div className="card">
       <div>
