@@ -33,6 +33,11 @@ function App() {
   };
 
   // reset choices & increase turn
+  const resetTurn = () => {
+    setChoiceOne(null);
+    setChoiceTwo(null);
+    setTurns((prevTurns) => prevTurns + 1);
+  };
 
   return (
     <div className="App">
