@@ -33,7 +33,10 @@ function App() {
       <div className="card-grid">
         {cards.map((card) => (
           <div className="card" key={card.id}>
-            <div></div>
+            <div>
+              <img className="front" src={card.src} alt="card front" />
+              <img src="/img/cover.png" alt="" />
+            </div>
           </div>
         ))}
       </div>
