@@ -27,6 +27,9 @@ function App() {
     setTurns(0);
   };
 
+  // handle a choice
+  const handleChoice = () => {};
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
