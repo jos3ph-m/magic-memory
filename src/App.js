@@ -28,7 +28,9 @@ function App() {
   };
 
   // handle a choice
-  const handleChoice = () => {};
+  const handleChoice = (card) => {
+    console.log(card);
+  };
 
   return (
     <div className="App">
