@@ -32,6 +32,8 @@ function App() {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
+  // reset choices & increase turn
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
