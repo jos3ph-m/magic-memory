@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { SingleCard } from './components/SingleCard';
 
@@ -33,6 +33,13 @@ function App() {
     // cannot complete challenge here
     console.log(choiceOne, choiceTwo);
   };
+
+  // compare 2 selected cards
+  useEffect(() => {
+    // we only want a comparison when the function runs with two choices selected
+    if (choiceOne && choiceTwo) {
+    }
+  }, [choiceOne, choiceTwo]);
 
   // reset choices & increase turn
   const resetTurn = () => {
