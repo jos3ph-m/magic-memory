@@ -43,6 +43,7 @@ function App() {
         resetTurn();
       } else {
         console.log("Those cards don't match");
+        resetTurn();
       }
     }
   }, [choiceOne, choiceTwo]);
