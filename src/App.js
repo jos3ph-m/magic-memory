@@ -8,7 +8,7 @@ const cardImages = [
   { src: '/img/ring-1.png', matched: false },
   { src: '/img/scroll-1.png', matched: false },
   { src: '/img/shield-1.png', matched: false },
-  { src: '/img/sword-1.png' },
+  { src: '/img/sword-1.png', matched: false },
 ];
 
 function App() {
