@@ -35,7 +35,16 @@ function App() {
   };
 
   // compare 2 selected cards
-  // we only want a comparison when the function runs with two choices selected
+  useEffect(() => {
+    // we only want a comparison when the function runs with two choices selected
+    if (choiceOne && choiceTwo) {
+      if (choiceOne.src === choiceTwo.src) {
+        console.log('These cards match');
+        resetTurn();
+      } else {
+      }
+    }
+  }, [choiceOne, choiceTwo]);
 
   // reset choices & increase turn
   const resetTurn = () => {
