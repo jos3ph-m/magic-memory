@@ -30,8 +30,8 @@ function App() {
   // handle a choice
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
-
     // cannot complete challenge here
+    console.log(choiceOne, choiceTwo);
   };
 
   // reset choices & increase turn
