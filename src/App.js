@@ -43,6 +43,8 @@ function App() {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
               return { ...card, matched: true };
+            } else {
+              return card;
             }
           });
         });
