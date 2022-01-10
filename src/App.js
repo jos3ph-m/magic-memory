@@ -41,7 +41,6 @@ function App() {
       if (choiceOne.src === choiceTwo.src) {
         resetTurn();
       } else {
-        console.log("Those cards don't match");
         resetTurn();
       }
     }
