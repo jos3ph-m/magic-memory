@@ -39,7 +39,6 @@ function App() {
     // we only want a comparison when the function runs with two choices selected
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
-        console.log('These cards match');
         resetTurn();
       } else {
         console.log("Those cards don't match");
