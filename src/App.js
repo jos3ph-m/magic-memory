@@ -74,7 +74,7 @@ function App() {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
-            flipped={card === choiceOne}
+            flipped={card === choiceOne || card === choiceTwo}
           />
         ))}
       </div>
