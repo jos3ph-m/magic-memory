@@ -11,6 +11,7 @@
 /* front of card - the picture */
 
 .card .front {
+  transform: rotateY(90deg);
 }
 .flipped .front {
 }
