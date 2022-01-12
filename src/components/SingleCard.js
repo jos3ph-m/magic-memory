@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleCard.css';
 
-export const SingleCard = ({ card, handleChoice }) => {
+export const SingleCard = ({ card, handleChoice, flipped }) => {
   const handleClick = () => {
     handleChoice(card);
   };
