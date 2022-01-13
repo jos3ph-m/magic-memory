@@ -17,7 +17,7 @@
 }
 .flipped .front {
   transform: rotateY(0deg);
-  transition-delay: 0.15s;
+  transition-delay: 0.17s;
 }
 
 /* back of card - cover */
