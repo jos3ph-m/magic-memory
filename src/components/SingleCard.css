@@ -27,5 +27,5 @@
 }
 .flipped .back {
   transform: rotateY(90deb);
-  transition-delay: 0.15s;
+  transition-delay: 0s;
 }
