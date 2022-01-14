@@ -68,6 +68,7 @@ function App() {
   };
 
   // start game automatically
+  useEffect(() => {}, []);
 
   return (
     <div className="App">
