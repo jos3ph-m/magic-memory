@@ -25,6 +25,7 @@ function App() {
       .map((card) => ({ ...card, id: Math.random() }));
 
     setChoiceOne(null);
+    setChoiceTwo(null);
     setCards(shuffledCards);
     setTurns(0);
   };
