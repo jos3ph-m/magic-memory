@@ -67,6 +67,8 @@ function App() {
     setDisabled(false);
   };
 
+  // start game automatically
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
