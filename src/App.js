@@ -16,7 +16,7 @@ function App() {
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
-  const [disabled, setDisabled] = useState(false)
+  const [disabled, setDisabled] = useState(false);
 
   // shuffle cards
   const shuffleCards = () => {
@@ -37,7 +37,7 @@ function App() {
 
   // compare 2 selected cards
   useEffect(() => {
-    setDisabled(true)
+    setDisabled(true);
     // we only want a comparison when the function runs with two choices selected
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
@@ -78,7 +78,7 @@ function App() {
             card={card}
             handleChoice={handleChoice}
             flipped={card === choiceOne || card === choiceTwo || card.matched}
-            disabled={}
+            disabled={disabled}
           />
         ))}
       </div>
