@@ -37,6 +37,7 @@ function App() {
 
   // compare 2 selected cards
   useEffect(() => {
+    setDisabled(true)
     // we only want a comparison when the function runs with two choices selected
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
@@ -63,6 +64,7 @@ function App() {
     setChoiceOne(null);
     setChoiceTwo(null);
     setTurns((prevTurns) => prevTurns + 1);
+    setDisabled(false);
   };
 
   return (
