@@ -37,9 +37,9 @@ function App() {
 
   // compare 2 selected cards
   useEffect(() => {
-    setDisabled(true);
     // we only want a comparison when the function runs with two choices selected
     if (choiceOne && choiceTwo) {
+      setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
         setCards((prevCards) => {
           return prevCards.map((card) => {
